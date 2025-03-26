@@ -1,6 +1,6 @@
-package com.atguigu.admin.mapper;
+package com.luy.admin.mapper;
 
-import com.atguigu.admin.bean.Customer;
+import com.luy.admin.bean.Customer;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

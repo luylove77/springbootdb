@@ -1,7 +1,7 @@
-package com.atguigu.admin.service;
+package com.luy.admin.service;
 
-import com.atguigu.admin.bean.City;
-import com.atguigu.admin.mapper.CityMapper;
+import com.luy.admin.bean.City;
+import com.luy.admin.mapper.CityMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

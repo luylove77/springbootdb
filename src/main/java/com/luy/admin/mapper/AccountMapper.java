@@ -1,6 +1,6 @@
-package com.atguigu.admin.mapper;
+package com.luy.admin.mapper;
 
-import com.atguigu.admin.bean.Account;
+import com.luy.admin.bean.Account;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

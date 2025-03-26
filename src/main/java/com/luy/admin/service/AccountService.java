@@ -1,7 +1,7 @@
-package com.atguigu.admin.service;
+package com.luy.admin.service;
 
-import com.atguigu.admin.bean.Account;
-import com.atguigu.admin.mapper.AccountMapper;
+import com.luy.admin.bean.Account;
+import com.luy.admin.mapper.AccountMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

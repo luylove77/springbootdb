@@ -1,4 +1,4 @@
-package com.atguigu.admin.bean;
+package com.luy.admin.bean;
 
 import lombok.Data;
 
