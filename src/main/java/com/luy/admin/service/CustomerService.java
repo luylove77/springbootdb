@@ -1,11 +1,13 @@
 package com.luy.admin.service;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.luy.admin.bean.Customer;
 import com.luy.admin.mapper.CustomerMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@DS("db1")
 public class CustomerService {
     @Autowired
     CustomerMapper customerMapper;
