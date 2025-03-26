@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.10.100:3306/db_account?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+#    druid:
+#      aop-patterns: com.atguigu.admin.*
+#      filters: stat
+#
+#      stat-view-servlet:
+#        enable: true
+#        login-username: admin
+#        login-password: admin
+#        resrtEnable: false
+#
+#      web-stat-filter:
+#        enable: true
+#        urlPattern: /*
+#        exclusions: '*.js,*.gid,*.jpg,*.png,*.css,*.ico,/druid/*'
+#
+#
+#      filter:
+#        stat:
+#          slow-sql-millis: 1000
+#          logSlowSql: true
+
+
+
+# 配置mybatis规则
+# mybatis-config.xml 全局配置文件
+# *.xml sql映射文件
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
