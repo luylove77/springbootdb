@@ -2,8 +2,10 @@ package com.atguigu.admin.controller;
 
 import com.atguigu.admin.bean.Account;
 import com.atguigu.admin.bean.City;
+import com.atguigu.admin.bean.Customer;
 import com.atguigu.admin.service.AccountService;
 import com.atguigu.admin.service.CityService;
+import com.atguigu.admin.service.CustomerService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,9 +20,17 @@ public class MyController {
     @Autowired
     private CityService cityService;
 
+    @Autowired
+    private CustomerService customerService;
+
     @PostMapping("/city")
     public void saveCity(City city){
          cityService.saveCity(city);
+    }
+
+    @PostMapping("/customer")
+    public void saveCustomer(Customer customer){
+        customerService.saveCustomer(customer);
     }
 
 
