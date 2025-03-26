@@ -15,4 +15,19 @@ public class CustomerService {
         customerMapper.insert(customer);
     }
 
+    //删除客户
+    public void deleteCustomer(Long id){
+        customerMapper.deleteById(id);
+    }
+
+    //修改客户
+    public void updateCustomer(Customer customer){
+        customerMapper.updateById(customer);
+    }
+
+    //查询客户
+    public Customer getCustomer(Long id){
+        return customerMapper.selectById(id);
+    }
+
 }

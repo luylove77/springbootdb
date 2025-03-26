@@ -28,9 +28,28 @@ public class MyController {
          cityService.saveCity(city);
     }
 
+    //插入客户
     @PostMapping("/customer")
     public void saveCustomer(Customer customer){
         customerService.saveCustomer(customer);
+    }
+
+    //删除客户
+    @DeleteMapping("/customer")
+    public void deleteCustomer(@RequestParam("id") Long id){
+        customerService.deleteCustomer(id);
+    }
+
+    //修改客户
+    @PutMapping("/customer")
+    public void updateCustomer(Customer customer){
+        customerService.updateCustomer(customer);
+    }
+
+    //查询客户
+    @GetMapping("/customer")
+    public Customer getCustomer(@RequestParam("id") Long id){
+        return customerService.getCustomer(id);
     }
 
 
